@@ -1,0 +1,9 @@
+{
+  "name": "SpineLink public showcase",
+  "revision": "2026.11.9.2",
+  "ui_theme": "monochrome",
+  "platform_reference": "2026.11.3 / P19 rev01",
+  "exterior_display": "Locked P10 exterior, same exterior lineage used in the P19 project",
+  "scope": "Public exterior and anatomy demonstration; internal mechanisms and engineering materials remain private",
+  "publication_scope_confirmed_by_user": true
+}
