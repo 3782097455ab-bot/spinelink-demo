@@ -1,5 +1,5 @@
 const base=new URL('./',import.meta.url),$=s=>document.querySelector(s);
-const urls={desktop:new URL('index.html',base),mobile:new URL('mobile/index.html',base),exterior:new URL('exterior/index.html',base),anatomy:new URL('anatomy/index.html',base),credits:new URL('anatomy/来源与模型说明.html',base)};
+const urls={desktop:new URL('index.html',base),mobile:new URL('mobile/index.html',base),exterior:new URL('exterior/index.html?v=20261109.2',base),anatomy:new URL('anatomy/index.html?v=20261109.2',base),credits:new URL('anatomy/来源与模型说明.html',base)};
 document.querySelectorAll('[data-link]').forEach(a=>a.href=urls[a.dataset.link]);
 document.querySelectorAll('[data-image]').forEach(a=>a.src=new URL('images/'+a.dataset.image,base));
 const panels=['exterior','anatomy','activity','about'];
