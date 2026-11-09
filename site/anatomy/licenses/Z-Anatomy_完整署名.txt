@@ -1,0 +1,46 @@
+﻿‘Z-ANATOMY’
+THE LIBRE 3D ATLAS OF ANATOMY
+THE LICENSE(S)
+  
+
+
+
+SHARE ALIKE
+
+
+All the code and content shared by ‘Z-Anatomy’ is under CC-BY-SA 4.0 license.
+You are free to:
+* Share, adapt, and redistribute the material for any purpose, even commercially.
+* Create derivative works.
+Under the following terms:
+* Attribution: You must credit the authors and provide a link to the license.
+* ShareAlike: Derivative works must be shared under CC-BY-SA 4.0.
+
+(FAQ: Yes, the integration of (a part of) the model inside an app made to read it requires sharing the modified model and the code of this app).
+
+
+ATTRIBUTIONS
+Please be sure attribute any content copied or derived from the content of this file as follows:
+HUMAN MODEL
+   * "BodyParts3D" – The Database Center for Life Science – CC-BY 4.0
+   * "Z-Anatomy" – CC-BY-SA 4.0
+   * Reference models:
+   * "Brainder" and "White matter" – University of Washington
+   * "Cranial Nerves and Foramina" – University of Dundee, CAHID – CC-BY 4.0
+   * "Anatomy of the Inner Ear" – University of Dundee School of Medicine – CC-BY-NC-SA 4.0
+   * "Kidney" – Lissie Cowley – CC-BY-NC 4.0
+CAT MODEL
+   * “Anatomie du chat" par Z-Anatomy pour le service d’anatomie du département de sciences fondamentales de VetAgro Sup, le Musée d’Histoire de l’enseignement vétérinaire de Lyon, et le service d’anatomie de la Faculté de médecine vétérinaire de l’Université de Montréal, avec le soutien de la Région Auvergne-Rhône-Alpes. – CC-BY-SA 4.0
+   * Reference models:
+   * "Felis catus 1952.10.20.1" – Phenome10K – CC-BY-NC 4.0
+   * "Cat vertebral column" – Mammal Morphology Lab – CC-BY
+   * Iris: Photo de Anastasiya Badun sur Unsplash - Licence Unsplash
+DEFINITIONS
+   * Wikipedia – CC-BY-SA 4.0
+
+
+AUTHORS
+   * 3D Models & Anatomy: Kousaku Okubo, Gauthier Kervyn, Colline Brassard, Christophe Céleste
+   * Unity Development: Lluis Vinent, Gauthier Kervyn, Morgan Le Chénéchal, Colline Brassard, Christophe Céleste
+   * Blender Add-on: Marcin Zielinski, Gauthier Kervyn, Morgan Le Chénéchal, David Rodriguez
+   * Translations: Gauthier Kervyn (French), Ana Teresa Bigio (Portuguese), Carlos Torres Villar (Spanish), Daniele Cossellu, Elisa Vivado, Paola Perin (Italian), Jadwiga Palosz (Polish), Shariar Ahmadpour (Persan), Anastasis Aglogallos (Greek).

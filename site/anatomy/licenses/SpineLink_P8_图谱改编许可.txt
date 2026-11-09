@@ -1,0 +1,13 @@
+SpineLink P8 解剖图谱改编
+本目录内新编写的 atlas.js、anatomy-data.js、atlas.css、index.html，以及由Z-Anatomy转换而来的assets/bones.glb、muscles.glb、joints.glb、skin.glb，按 CC BY-SA 4.0 提供。
+SpineLink项目参与人：田阳、周建宇。第三方解剖数据不列为SpineLink原创。
+模型：Z-Anatomy；原始人体模型：BodyParts3D / The Database Center for Life Science。
+Z-Anatomy作者及贡献者见完整署名。FBX分发仓库/Unity应用作者：Lluís Vinent Juanico。
+https://creativecommons.org/licenses/by-sa/4.0/
+https://github.com/LluisV/Z-Anatomy/tree/PC-Version/Resources/Models/FBX
+BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International
+变更：网格筛选、坐标变换、顶点去重、显示材质、中文索引与部分名称校正；新增参考动作与独立工程装置叠加。
+P7装置模型与其他轮次的软件在各自目录记录，未将第三方解剖网格写入原装置CAD，也未将其作为原创解剖建模成果。
+Three.js使用MIT许可，见../21_Parts_Engineering_P7/vendor/THREE-LICENSE.txt。
+
+2026-11-09公开演示改编：资源路径与导航适配GitHub Pages，叠加P10外观展示模型，来源说明同步；Three.js许可现位于../../vendor/THREE-LICENSE.txt。

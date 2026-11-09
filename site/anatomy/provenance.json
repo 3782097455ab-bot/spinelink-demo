@@ -1,0 +1,122 @@
+{
+  "revision": "P8",
+  "anatomy_structure_count": 1575,
+  "layer_counts": {
+    "bone": 231,
+    "bursa": 118,
+    "deep": 445,
+    "fascia": 80,
+    "superficial": 28,
+    "tendon": 12,
+    "ligament": 367,
+    "cartilage": 46,
+    "skin": 248
+  },
+  "original_device_instances": 252,
+  "contributors_order": [
+    "田阳",
+    "周建宇"
+  ],
+  "sources": [
+    {
+      "source": "Joints100.fbx",
+      "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/PC-Version/Resources/Models/FBX/Joints100.fbx",
+      "upstream_git_blob": "9db06d20217f4f42999dcfdf31b1f6af78dc7794",
+      "sha256": "f4ba7a910cdaef99e31530f368628780d9f06b5d77853f8b721f47f67137e823",
+      "bytes": 9804796,
+      "upstream_integrity_verified": true
+    },
+    {
+      "source": "MuscularSystem100.fbx",
+      "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/PC-Version/Resources/Models/FBX/MuscularSystem100.fbx",
+      "upstream_git_blob": "2477e1b6caf97d7174762b5eec6cf1c80db64eed",
+      "sha256": "4c19df534d5d84aabbce08604306aa0485b43e8a2483c72a95b569e1dfea2279",
+      "bytes": 37343180,
+      "upstream_integrity_verified": true
+    },
+    {
+      "source": "Regions of human body100.fbx",
+      "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/PC-Version/Resources/Models/FBX/Regions%20of%20human%20body100.fbx",
+      "upstream_git_blob": "99d81944658b3407f62d3428d40a89646d9c6369",
+      "sha256": "9d8da01d4719f9a61ee6ccfcaef85f788c4c67e9bcd74f5725c6946ab8b44199",
+      "bytes": 4433260,
+      "upstream_integrity_verified": true
+    },
+    {
+      "source": "SkeletalSystem100.fbx",
+      "url": "https://raw.githubusercontent.com/LluisV/Z-Anatomy/PC-Version/Resources/Models/FBX/SkeletalSystem100.fbx",
+      "upstream_git_blob": "7c62e45211bf3992bb7239170343e06e2b073865",
+      "sha256": "294a649765cd060a62a4095da52b9c8ef2d97769aa447e196448aa5f7d596dea",
+      "bytes": 41339660,
+      "upstream_integrity_verified": true
+    }
+  ],
+  "asset_units": "m",
+  "axes": {
+    "x": "left",
+    "y": "posterior",
+    "z": "superior"
+  },
+  "registration": {
+    "type": "manual reference overlay; not patient registration",
+    "device_translation_m": [
+      0,
+      -0.015,
+      0.82
+    ],
+    "device_scale": 1,
+    "reference": "胸段中线、双侧肩带；允许前后/上下位置及统一尺度微调",
+    "uncertainty": "未执行同一人体影像配准、皮肤接触优化或穿戴间隙实测"
+  },
+  "motion": {
+    "type": "illustrative shader deformation; not musculoskeletal simulation",
+    "phase_range": [
+      0,
+      1
+    ],
+    "rotation_radians": "-sign(x)*0.09*phase*weight",
+    "pivot_xy_m": [
+      0,
+      -0.04
+    ],
+    "rigid_structures": "scapula/clavicle/upper limb bones; spine and ribs fixed",
+    "soft_tissue_weight": "smoothstep(0.015,0.16,abs(x))*smoothstep(0.86,1.22,z)",
+    "cycle_seconds": 8,
+    "limits": "无肌肉激活、骨接触、组织本构、应力或病理参数；不将相位或旋转幅度用作训练阈值"
+  },
+  "clinical_status": "参考解剖图谱，未作医学器械认证、患者诊断或临床验证",
+  "label_corrections": {
+    "issue": "原始FBX中Ascending/Descending斜方肌节点名与其几何位置相反",
+    "preserve": "原始文件、原始节点ID及哈希保留，不重写上游资料",
+    "mapping": [
+      {
+        "source": "Ascending_part_of_trapezius_muscle[l/r]",
+        "display": "斜方肌上部（下行部）",
+        "observed_z_m": [
+          1.415,
+          1.575
+        ]
+      },
+      {
+        "source": "Descending_part_of_trapezius_muscle[l/r]",
+        "display": "斜方肌下部（上行部）",
+        "observed_z_m": [
+          1.12,
+          1.414
+        ]
+      }
+    ],
+    "basis": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC5122541/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6849087/"
+    ],
+    "scope": "本轮几何位置与名称对应的人工核对；未声称全身1575结构均经解剖专家逐项审定"
+  },
+  "display_group_note": "表层重点肌群/其余肌群为肩颈揭层显示分组；不宣称全身肌群可统一二分深浅。",
+  "regional_filter_note": "颈椎与肩关节采用结构名称白名单并结合空间边界；局部显示不是医学影像切片。",
+  "integration": [
+    "默认工程主页新增P8图谱嵌入入口",
+    "配套App设备指南新增P8入口",
+    "P7交付页新增导航，CAD与图纸未改"
+  ]
+}
