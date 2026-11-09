@@ -1,9 +1,9 @@
 const base=new URL('./',import.meta.url),$=s=>document.querySelector(s);
-const urls={desktop:new URL('index.html',base),mobile:new URL('mobile/index.html',base),exterior:new URL('exterior/index.html?v=20261109.2',base),anatomy:new URL('anatomy/index.html?v=20261109.2',base),credits:new URL('anatomy/来源与模型说明.html',base)};
+const urls={desktop:new URL('index.html?v=20261109.3',base),mobile:new URL('mobile/index.html?v=20261109.3',base),exterior:new URL('exterior/index.html?v=20261109.3',base),anatomy:new URL('anatomy/index.html?v=20261109.3',base),credits:new URL('anatomy/来源与模型说明.html',base)};
 document.querySelectorAll('[data-link]').forEach(a=>a.href=urls[a.dataset.link]);
 document.querySelectorAll('[data-image]').forEach(a=>a.src=new URL('images/'+a.dataset.image,base));
 const panels=['exterior','anatomy','activity','about'];
-function show(name){if(!panels.includes(name))name='exterior';for(const id of panels){$('#panel-'+id).hidden=id!==name;$('#tab-'+id).setAttribute('aria-selected',String(id===name));}const frame=$('#panel-'+name+' iframe');if(frame&&!frame.src)frame.src=urls[name];document.title='SpineLink · '+{exterior:'装置外观',anatomy:'解剖图谱',activity:'活动演示',about:'项目介绍'}[name];}
+function show(name){if(!panels.includes(name))name='exterior';for(const id of panels){$('#panel-'+id).hidden=id!==name;$('#tab-'+id).setAttribute('aria-selected',String(id===name));}const frame=$('#panel-'+name+' iframe');if(frame&&!frame.getAttribute('src'))frame.src=urls[name];document.querySelectorAll('.viewer iframe').forEach(f=>f.contentWindow?.postMessage({type:'spinelink-view-visibility',visible:f===frame},location.origin));document.title='SpineLink · '+{exterior:'装置外观',anatomy:'解剖图谱',activity:'活动演示',about:'项目介绍'}[name];}
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{location.hash=b.dataset.tab;show(b.dataset.tab);});
 window.addEventListener('hashchange',()=>show(location.hash.slice(1)));
 show(location.hash.slice(1)||(document.body.classList.contains('mobile')?'activity':'exterior'));
